@@ -7,7 +7,11 @@
 struct Solution {}
 
 impl Solution {
-    pub fn merge(nums1: &mut Vec<i32>, m: i32, nums2: &mut Vec<i32>, n: i32) {}
+    pub fn merge(nums1: &mut Vec<i32>, m: i32, nums2: &mut Vec<i32>, n: i32) {
+        nums1.iter_mut().for_each(|val| {
+            if val < 
+        })
+    }
 }
 
 #[cfg(test)]
@@ -15,5 +19,27 @@ mod tests {
     use super::*;
 
     #[test]
-    fn it_works() {}
+    fn example_1() {
+        let mut nums1: Vec<i32> = Vec::from([1, 2, 3, 0, 0, 0]);
+        let mut nums2: Vec<i32> = Vec::from([2, 5, 6]);
+        Solution::merge(&mut nums1, 3, &mut nums2, 3);
+
+        assert_eq!(nums1, vec![1, 2, 2, 3, 5, 6]);
+    }
+
+    fn example_2() {
+        let mut nums1: Vec<i32> = Vec::from([1]);
+        let mut nums2: Vec<i32> = Vec::from([]);
+        Solution::merge(&mut nums1, 1, &mut nums2, 0);
+
+        assert_eq!(nums1, vec![1]);
+    }
+
+    fn example_3() {
+        let mut nums1: Vec<i32> = Vec::from([]);
+        let mut nums2: Vec<i32> = Vec::from([1]);
+        Solution::merge(&mut nums1, 0, &mut nums2, 1);
+
+        assert_eq!(nums1, vec![1]);
+    }
 }
