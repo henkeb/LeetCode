@@ -1,3 +1,4 @@
+mod majority_element_169;
 mod merge_sorted_array;
 mod remove_duplicates_sorted_array;
 mod remove_duplicates_sorted_array_2;
