@@ -1,6 +1,6 @@
 // Solution has
-// Time complexity: O(?)
-// Space complexity: O(?)
+// Time complexity: O(n+k)
+// Space complexity: O(n)
 
 // You are given an integer array nums. You want to maximize the number of points you get by performing the following operation any number of times:
 //
@@ -27,12 +27,15 @@ impl Solution {
             max_number = std::cmp::max(max_number, *i);
         }
 
-        let mut dp: Vec<i32> = vec![0; (max_number + 1) as usize];
-        dp[1] = *map.get(&1).unwrap_or(&0);
-        for i in 2..dp.len() {
-            dp[i] = std::cmp::max(dp[i - 1], dp[i - 2] + *map.get(&(i as i32)).unwrap_or(&0));
+        let mut two_back = 0;
+        let mut one_back = *map.get(&1).unwrap_or(&0);
+        let mut temp;
+        for i in 2..=max_number {
+            temp = one_back;
+            one_back = std::cmp::max(one_back, two_back + *map.get(&i).unwrap_or(&0));
+            two_back = temp;
         }
-        dp[max_number as usize]
+        one_back
     }
 }
 
