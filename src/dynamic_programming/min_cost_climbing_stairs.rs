@@ -1,6 +1,6 @@
 // Solution has
 // Time complexity: O(n)
-// Space complexity: O(n)
+// Space complexity: O(1)
 
 //You are given an integer array cost where cost[i] is the cost of ith step on a staircase. Once you pay the cost, you can either climb one or two steps.
 //
