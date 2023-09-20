@@ -11,11 +11,15 @@ struct Solution {}
 
 impl Solution {
     pub fn min_cost_climbing_stairs(cost: Vec<i32>) -> i32 {
-        let mut dp: Vec<i32> = vec![0; cost.len() + 2];
-        for i in (0..cost.len()).rev() {
-            dp[i] = cost[i] + std::cmp::min(dp[i + 1], dp[i + 2]);
-        }
-        std::cmp::min(dp[0], dp[1])
+        let mut take_one = 0;
+        let mut take_two = 0;
+        let mut temp = 0;
+        (2..=cost.len()).for_each(|i| {
+            temp = take_one;
+            take_one = std::cmp::min(take_one + cost[i - 1], take_two + cost[i - 2]);
+            take_two = temp;
+        });
+        take_one
     }
 }
 
