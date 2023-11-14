@@ -6,5 +6,6 @@ mod merge_sorted_array;
 mod remove_duplicates_sorted_array;
 mod remove_duplicates_sorted_array_2;
 mod remove_element;
+mod roman_to_int;
 mod rotate_array;
 mod two_sum;
