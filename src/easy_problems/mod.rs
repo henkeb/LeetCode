@@ -5,6 +5,8 @@ mod longest_common_prefix;
 mod maximum_depth_binary_tree;
 mod merge_two_sorted_lists;
 mod palindrome;
+mod plus_one;
+mod reverse_string_recursive;
 mod same_tree;
 mod search_insert_position;
 mod symmetric_tree;
