@@ -1,3 +1,4 @@
+mod add_binary;
 mod binary_tree_inorder_traversal;
 mod find_index_of_first_occ;
 mod length_of_last_word;
