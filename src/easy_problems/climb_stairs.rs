@@ -1,5 +1,5 @@
 // Solution has
-// Time complexity: O(Log(n))
+// Time complexity: O(n)
 // Space complexity: O(1)
 //
 // You are climbing a staircase. It takes n steps to reach the top.
