@@ -10,5 +10,6 @@ mod plus_one;
 mod reverse_string_recursive;
 mod same_tree;
 mod search_insert_position;
+mod sqrt;
 mod symmetric_tree;
 mod valid_paranthesis;
