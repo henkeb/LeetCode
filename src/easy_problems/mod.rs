@@ -5,6 +5,7 @@ mod climb_stairs;
 mod convert_sorted_array_to_binary_tree;
 mod excel_column_sheet;
 mod find_index_of_first_occ;
+mod happy_number;
 mod length_of_last_word;
 mod longest_common_prefix;
 mod maximum_depth_binary_tree;
