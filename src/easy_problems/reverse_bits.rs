@@ -14,8 +14,6 @@ impl Solution {
                 rev ^= 1;
             }
             x >>= 1;
-            println!("Rev: {rev:b}");
-            println!("X: {x:b}");
         }
         rev
     }
