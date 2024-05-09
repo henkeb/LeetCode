@@ -3,6 +3,7 @@ mod balanced_binary_tree;
 mod binary_tree_inorder_traversal;
 mod climb_stairs;
 mod contains_duplicate;
+mod contains_duplicate_ii;
 mod convert_sorted_array_to_binary_tree;
 mod excel_column_sheet;
 mod find_index_of_first_occ;
