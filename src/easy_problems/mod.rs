@@ -18,6 +18,7 @@ mod hamming_weight;
 mod happy_number;
 mod intersection_of_two_arrays_349;
 mod invert_binary_tree;
+mod is_subsequence_392;
 mod isomorphic_strings;
 mod length_of_last_word;
 mod longest_common_prefix;
