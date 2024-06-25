@@ -1,6 +1,6 @@
 // Solution has
-// Time complexity: O(?)
-// Space complexity: O(?)
+// Time complexity: O(n)
+// Space complexity: O(1)
 //
 // Given two strings s and t, return true if s is a subsequence of t, or false otherwise.
 //
