@@ -2,6 +2,7 @@ mod add_binary;
 mod add_digits_258;
 mod arranging_coins_441;
 mod balanced_binary_tree;
+mod base_7_504;
 mod binary_tree_inorder_traversal;
 mod binary_watch_401;
 mod climb_stairs;
