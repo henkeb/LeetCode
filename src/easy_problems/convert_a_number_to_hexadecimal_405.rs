@@ -1,3 +1,7 @@
+// Solution has
+// Time complexity: O(log16(n))
+// Space complexity: O(log16(n))
+//
 use core::panic;
 
 struct Solution;

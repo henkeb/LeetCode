@@ -1,3 +1,7 @@
+// Solution has
+// Time complexity: O(n)
+// Space complexity: O(1)
+//
 // Definition for a binary tree node.
 #[derive(Debug, PartialEq, Eq)]
 pub struct TreeNode {

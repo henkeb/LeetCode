@@ -1,3 +1,7 @@
+// Solution has
+// Time complexity: O(n)
+// Space complexity: O(1)
+//
 struct Solution;
 impl Solution {
     pub fn longest_palindrome(s: String) -> i32 {

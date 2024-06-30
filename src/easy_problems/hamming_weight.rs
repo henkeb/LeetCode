@@ -1,5 +1,5 @@
 // Solution has
-// Time complexity: O(n)
+// Time complexity: O(1)
 // Space complexity: O(1)
 //
 // Write a function that takes the binary representation of a positive integer and returns the number of

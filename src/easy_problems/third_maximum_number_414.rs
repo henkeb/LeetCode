@@ -1,3 +1,7 @@
+// Solution has
+// Time complexity: O(n)
+// Space complexity: O(1)
+//
 // Given an integer array nums, return the third distinct maximum number in this array. If the third maximum does not exist, return the maximum number.
 struct Solution;
 impl Solution {

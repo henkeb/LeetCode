@@ -1,3 +1,7 @@
+// Solution has
+// Time complexity: O(n)
+// Space complexity: O(n)
+//
 // Given an integer n, return a string array answer (1-indexed) where:
 //
 //     answer[i] == "FizzBuzz" if i is divisible by 3 and 5.
