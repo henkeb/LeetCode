@@ -96,6 +96,7 @@ mod symmetric_tree;
 mod teemo_attacking_495;
 mod third_maximum_number_414;
 mod three_consecutive_odds_1550;
+mod two_sum_4_input_BST_653;
 mod ugly_number_263;
 mod valid_anagram_242;
 mod valid_palindrome;
