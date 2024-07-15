@@ -5,4 +5,6 @@ pub mod dynamic_programming;
 #[allow(dead_code)]
 pub mod easy_problems;
 #[allow(dead_code)]
+pub mod hard;
+#[allow(dead_code)]
 pub mod medium_problems;

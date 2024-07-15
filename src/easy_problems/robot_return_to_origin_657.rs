@@ -9,6 +9,7 @@
 // Return true if the robot returns to the origin after it finishes all of its moves, or false otherwise.
 //
 // Note: The way that the robot is "facing" is irrelevant. 'R' will always make the robot move to the right once, 'L' will always make it move left, etc. Also, assume that the magnitude of the robot's movement is the same for each move.
+struct Solution;
 impl Solution {
     pub fn judge_circle(moves: String) -> bool {
         moves.chars().fold((0, 0), {
