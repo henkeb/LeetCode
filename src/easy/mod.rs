@@ -49,6 +49,7 @@ mod licence_key_formatting_482;
 mod longest_common_prefix;
 mod longest_harmonious_subsequence_594;
 mod longest_palindrome_409;
+mod lucky_number_in_a_matrix_1380;
 mod max_average_subarray_1_643;
 mod max_consecutive_ones_485;
 mod max_product_of_three_nums_628;
