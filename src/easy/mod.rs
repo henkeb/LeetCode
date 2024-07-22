@@ -93,6 +93,7 @@ mod same_tree;
 mod search_insert_position;
 mod set_mismatch_645;
 mod single_number;
+mod sort_the_people_2418;
 mod sqrt;
 mod student_addendance_record_i_551;
 mod sum_of_left_leaves_404;
