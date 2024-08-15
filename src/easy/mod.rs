@@ -46,6 +46,7 @@ mod isomorphic_strings;
 mod keyboard_row_500;
 mod kth_distinct_string_in_arr_2053;
 mod kth_largest_element_in_a_stream_703;
+mod lemonade_change_860;
 mod length_of_last_word;
 mod licence_key_formatting_482;
 mod longest_common_prefix;
