@@ -18,6 +18,8 @@ mod kdiff_pairs_in_array_532;
 mod lowest_common_ancestor_236;
 mod max_score_from_removing_substrings_1717;
 mod maximize_greatness_of_array_2592;
+mod maximum_distance_in_arrays_624;
+mod maximum_length_of_pair_chain_646;
 mod maximum_prime_difference_3115;
 mod merge_nodes_inbetween_0_2181;
 mod min_cost_to_convert_string_1_2976;
