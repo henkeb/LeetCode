@@ -21,6 +21,21 @@ impl Solution {
         }
         !num & i32::MAX >> (31 - msb)
     }
+
+    pub fn find_complement_ii(num: i32) -> i32 {
+        let mut msb = 0;
+        let mut number = num;
+        for i in 0..=31 {
+            if num & 1 == 1 {
+                msb = i;
+            }
+            number >>= 1;
+        }
+        for i in 0..=msb {
+            number ^= 1 << i;
+        }
+        number
+    }
 }
 
 #[cfg(test)]
