@@ -99,6 +99,7 @@ mod search_insert_position;
 mod set_mismatch_645;
 mod single_number;
 mod sort_array_by_increasing_frequency_1636;
+mod sort_array_by_parity_905;
 mod sort_the_people_2418;
 mod sqrt;
 mod student_addendance_record_i_551;
