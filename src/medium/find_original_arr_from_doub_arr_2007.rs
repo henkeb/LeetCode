@@ -31,6 +31,11 @@ use std::collections::HashMap;
 //
 // 1 <= changed.length <= 105
 // 0 <= changed[i] <= 105
+//
+// Solution has
+// Time complexity: O(n*Log(n))
+// Space complexity: O(n)
+//
 struct Solution;
 impl Solution {
     pub fn find_original_array(changed: Vec<i32>) -> Vec<i32> {
@@ -58,10 +63,12 @@ impl Solution {
                     output.push(num);
                 }
                 if *even_val == val {
-                    even.remove(&num);
+                    even.remove(&(num * 2));
                 } else {
                     *even_val -= val;
                 }
+            } else {
+                return vec![];
             }
         }
 
@@ -76,8 +83,12 @@ impl Solution {
         even_arr.sort_unstable();
 
         while !even_arr.is_empty() {
+            if even_arr[0] == 0 {
+                if even_arr.iter().filter(|&val| *val == 0).count() & 1 == 1 {
+                    return vec![];
+                }
+            }
             if let Some(double) = even_arr.iter().position(|&val| val == even_arr[0] * 2) {
-                println!("{even_arr:?}");
                 output.push(even_arr[0]);
                 even_arr.remove(double);
                 even_arr.remove(0);
