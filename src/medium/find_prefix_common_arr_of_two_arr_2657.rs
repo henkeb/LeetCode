@@ -32,6 +32,11 @@ use std::collections::HashSet;
 // 1 <= A.length == B.length == n <= 50
 // 1 <= A[i], B[i] <= n
 // It is guaranteed that A and B are both a permutation of n integers.
+//
+// Solution has
+// Time complexity: O(n)
+// Space complexity: O(n)
+//
 struct Solution;
 impl Solution {
     pub fn find_the_prefix_common_array(a: Vec<i32>, b: Vec<i32>) -> Vec<i32> {
