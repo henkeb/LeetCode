@@ -47,6 +47,7 @@ mod min_len_of_str_after_ops_3223;
 mod min_number_of_pushes_to_type_word_3016;
 mod min_operations_to_reduce_int_to_0_2571;
 mod min_swaps_to_group_1s_2134;
+mod min_xor_2429;
 mod minimum_jumps_to_reach_home_1654;
 mod minimum_ops_to_make_binary_array_elements_1_3191;
 mod minimum_time_diff_539;
