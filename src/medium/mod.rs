@@ -2,6 +2,7 @@ mod add_two_numbers_2;
 mod average_waiting_time_1701;
 mod bag_of_tokens_948;
 mod binary_tree_coloring_game_1145;
+mod bitwise_xor_of_all_pairings_2425;
 mod check_if_array_pairs_are_divisible_by_k_1497;
 mod coin_change_322;
 mod coin_change_ii_518;
