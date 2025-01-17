@@ -52,6 +52,7 @@ mod min_xor_2429;
 mod minimum_jumps_to_reach_home_1654;
 mod minimum_ops_to_make_binary_array_elements_1_3191;
 mod minimum_time_diff_539;
+mod neighbouring_bitwise_xor_2683;
 mod number_of_good_leaf_nodes_pairs_1530;
 mod permutation_in_string_567;
 mod range_sum_of_sorted_subarray_sums_1508;
