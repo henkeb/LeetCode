@@ -1,4 +1,4 @@
-use std::collections::{HashSet, VecDeque};
+use std::collections::VecDeque;
 
 // You are given an integer matrix isWater of size m x n that represents a map of land and water cells.
 //
@@ -40,6 +40,11 @@ use std::collections::{HashSet, VecDeque};
 // 1 <= m, n <= 1000
 // isWater[i][j] is 0 or 1.
 // There is at least one water cell.
+//
+// Solution has
+// Time complexity: O(m*n)
+// Space complexity: O(m*n)
+//
 struct Solution;
 impl Solution {
     const DIRS: [(isize, isize); 4] = [(1, 0), (-1, 0), (0, 1), (0, -1)];
@@ -47,38 +52,28 @@ impl Solution {
         let m = is_water.len();
         let n = is_water[0].len();
         let mut height_map: Vec<Vec<i32>> = vec![vec![-1; n]; m];
-        let mut visited: HashSet<(usize, usize)> = HashSet::new();
-        let mut queue: VecDeque<(i32, Vec<(usize, usize)>)> = VecDeque::new();
+        let mut queue: VecDeque<(usize, usize)> = VecDeque::new();
         for i in 0..m {
             for j in 0..n {
                 if is_water[i][j] == 1 {
-                    queue.push_back((0, vec![(i, j)]));
+                    height_map[i][j] = 0;
+                    queue.push_back((i, j));
                 }
             }
         }
         let m = m as isize;
         let n = n as isize;
-        while let Some((height, mut positions)) = queue.pop_front() {
-            while let Some((i, j)) = positions.pop() {
-                if visited.contains(&(i, j)) {
-                    continue;
-                }
-
-                visited.insert((i, j));
-                height_map[i][j] = height;
-
-                let mut new_positions: Vec<(usize, usize)> = Vec::new();
-
-                for dir in Self::DIRS {
-                    let new_pos = ((i as isize + dir.0), (j as isize + dir.1));
-                    if new_pos.0 >= 0 && new_pos.0 < m {
-                        if new_pos.1 >= 0 && new_pos.1 < n {
-                            new_positions.push((new_pos.0 as usize, new_pos.1 as usize));
+        while let Some((i, j)) = queue.pop_front() {
+            for dir in Self::DIRS {
+                let new_pos = ((i as isize + dir.0), (j as isize + dir.1));
+                if new_pos.0 >= 0 && new_pos.0 < m {
+                    if new_pos.1 >= 0 && new_pos.1 < n {
+                        let (new_row, new_col) = (new_pos.0 as usize, new_pos.1 as usize);
+                        if height_map[new_row][new_col] == -1 {
+                            height_map[new_row][new_col] = height_map[i][j] + 1;
+                            queue.push_back((new_row, new_col));
                         }
                     }
-                }
-                if !new_positions.is_empty() {
-                    queue.push_back((height + 1, new_positions));
                 }
             }
         }
