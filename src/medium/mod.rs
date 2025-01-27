@@ -11,6 +11,7 @@ mod combination_sum_ii_40;
 mod count_number_of_teams_1395;
 mod count_servers_that_communicate_1267;
 mod count_sub_islands_1905;
+mod course_schedule_iv_1462;
 mod create_binary_tree_from_descriptions_2196;
 mod delete_nodes_and_return_forest_1110;
 mod delete_nodes_from_linked_list_present_in_array_3217;
