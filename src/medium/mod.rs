@@ -63,6 +63,7 @@ mod neighbouring_bitwise_xor_2683;
 mod number_of_good_leaf_nodes_pairs_1530;
 mod permutation_in_string_567;
 mod range_sum_of_sorted_subarray_sums_1508;
+mod redundant_connection_684;
 mod regions_cut_by_slashes_959;
 mod reverse_substrings_between_paranthesis_1190;
 mod sort_an_array_912;
