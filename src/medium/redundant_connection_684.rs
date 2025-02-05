@@ -74,6 +74,6 @@ impl Solution {
                 .and_modify(|edges| edges.push(u))
                 .or_insert(vec![u]);
         }
-        panic!("should never happen");
+        vec![]
     }
 }
