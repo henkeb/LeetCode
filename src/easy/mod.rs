@@ -11,6 +11,7 @@ mod binary_tree_tilt_563;
 mod binary_watch_401;
 mod can_place_flowers_605;
 mod check_if_arr_is_sort_and_rotated_1752;
+mod clear_digits_3174;
 mod climb_stairs;
 mod construct_rectangle_492;
 mod contains_duplicate;
