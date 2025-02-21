@@ -1,4 +1,4 @@
-use std::{cell::RefCell, rc::Rc};
+use std::{cell::RefCell, collections::HashSet, rc::Rc};
 
 // Given a binary tree with the following rules:
 //
@@ -82,30 +82,29 @@ impl TreeNode {
     }
 }
 struct FindElements {
-    root: Option<Rc<RefCell<TreeNode>>>,
+    values: HashSet<i32>,
 }
 
 // `&self` means the method takes an immutable reference.
 // If you need a mutable reference, change it to `&mut self` instead.
 impl FindElements {
     fn new(root: Option<Rc<RefCell<TreeNode>>>) -> Self {
-        FindElements { root }
+        let mut values = HashSet::new();
+        let mut stack: Vec<(Option<Rc<RefCell<TreeNode>>>, i32)> = Vec::new();
+        stack.push((root, 0));
+        while let Some(pair) = stack.pop() {
+            if let (Some(rc), value) = pair {
+                values.insert(value);
+                let node = rc.borrow();
+                stack.push((node.left.clone(), value * 2 + 1));
+                stack.push((node.right.clone(), value * 2 + 2));
+            }
+        }
+        Self { values }
     }
 
     fn find(&self, target: i32) -> bool {
-        let mut stack: Vec<(Option<Rc<RefCell<TreeNode>>>, i32)> = Vec::new();
-        stack.push((self.root.clone(), 0));
-        while let Some(node) = stack.pop() {
-            if let (Some(node), parent_val) = node {
-                node.borrow_mut().val = parent_val;
-                if node.borrow().val == target {
-                    return true;
-                }
-                stack.push((node.borrow().left.clone(), node.borrow().val * 2 + 1));
-                stack.push((node.borrow().right.clone(), node.borrow().val * 2 + 2));
-            }
-        }
-        false
+        self.values.get(&target).is_some()
     }
 }
 
