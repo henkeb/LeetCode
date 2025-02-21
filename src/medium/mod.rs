@@ -21,6 +21,7 @@ mod divide_players_into_teams_of_equal_skill_2491;
 mod filling_bookcase_shelves_1105;
 mod find_city_with_lowest_neighbours_1334;
 mod find_distinct_colours_among_balls_3160;
+mod find_elem_in_contaminated_tree_1261;
 mod find_eventual_safe_states_802;
 mod find_longest_substr_containing_even_vowels_1371;
 mod find_matrix_given_row_col_sums_1605;

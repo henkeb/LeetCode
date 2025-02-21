@@ -57,3 +57,34 @@ impl Solution {
         false
     }
 }
+
+struct Solution2;
+impl Solution2 {
+    pub fn find_different_binary_string(nums: Vec<String>) -> String {
+        let mut ans = String::new();
+        for i in 0..nums.len() {
+            if let Some(num) = nums[i].chars().nth(i) {
+                if num == '1' {
+                    ans.push('0');
+                } else {
+                    ans.push('1');
+                }
+            }
+        }
+        ans
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test1() {
+        Solution2::find_different_binary_string(vec![
+            "111".to_string(),
+            "011".to_string(),
+            "001".to_string(),
+        ]);
+    }
+}
