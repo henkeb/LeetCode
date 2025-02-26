@@ -50,6 +50,7 @@ mod longest_subarray_with_max_bitwise_and_2419;
 mod lowest_common_ancestor_236;
 mod make_sum_divisible_by_p_1590;
 mod map_of_highest_peak_1765;
+mod max_abs_sum_of_any_sub_arr_1749;
 mod max_num_fish_in_grid_2658;
 mod max_score_from_removing_substrings_1717;
 mod max_sum_pair_eq_digits_2342;
