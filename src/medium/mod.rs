@@ -43,6 +43,7 @@ mod josephus_problem_1823;
 mod kdiff_pairs_in_array_532;
 mod kth_lexo_str_of_all_happy_str_1415;
 mod largest_number_179;
+mod len_of_longest_fib_sequence_873;
 mod letter_tile_pos_1079;
 mod linked_list_in_binary_tree_1367;
 mod longest_increasing_subsequence_300;
