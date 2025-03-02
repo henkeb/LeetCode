@@ -1,5 +1,6 @@
 mod add_binary;
 mod add_digits_258;
+mod apply_ops_to_arr_2460;
 mod arranging_coins_441;
 mod array_partition_561;
 mod average_of_levels_btree_637;
@@ -65,6 +66,7 @@ mod max_consecutive_ones_485;
 mod max_product_of_three_nums_628;
 mod max_score_after_splitting_str_1422;
 mod maximum_depth_binary_tree;
+mod merge_2d_arr_by_sum_vals_2570;
 mod merge_two_binary_trees_617;
 mod merge_two_sorted_lists;
 mod min_bit_flips_to_convert_number_2220;
