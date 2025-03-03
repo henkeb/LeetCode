@@ -76,6 +76,7 @@ mod most_profitable_path_in_tree_2467;
 mod neighbouring_bitwise_xor_2683;
 mod num_subarr_with_odd_sum_1524;
 mod number_of_good_leaf_nodes_pairs_1530;
+mod partition_arr_acc_to_giv_pivot_2161;
 mod permutation_in_string_567;
 mod prod_of_last_k_nums_1352;
 mod range_sum_of_sorted_subarray_sums_1508;
