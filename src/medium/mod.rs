@@ -4,6 +4,7 @@ mod bag_of_tokens_948;
 mod binary_tree_coloring_game_1145;
 mod bitwise_xor_of_all_pairings_2425;
 mod check_if_array_pairs_are_divisible_by_k_1497;
+mod check_if_num_is_sum_of_pow_three_1780;
 mod coin_change_322;
 mod coin_change_ii_518;
 mod combination_of_sum_4_377;
