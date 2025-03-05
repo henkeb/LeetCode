@@ -12,6 +12,7 @@ mod combination_sum_ii_40;
 mod construct_binary_tree_from_pre_post_order_trav_889;
 mod construct_lexo_largest_seq_1718;
 mod construct_smallest_num_from_di_str_2375;
+mod count_number_of_coloured_cells_2579;
 mod count_number_of_teams_1395;
 mod count_servers_that_communicate_1267;
 mod count_sub_islands_1905;
