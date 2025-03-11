@@ -33,6 +33,11 @@
 // 3 <= colors.length <= 105
 // 0 <= colors[i] <= 1
 // 3 <= k <= colors.length
+//
+// Solution has
+// Time complexity: O(n)
+// Space complexity: O(1)
+//
 struct Solution;
 impl Solution {
     pub fn number_of_alternating_groups(colors: Vec<i32>, k: i32) -> i32 {
