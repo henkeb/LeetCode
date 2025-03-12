@@ -63,6 +63,7 @@ mod make_two_arrays_equal_by_rev_substr_1460;
 mod max_ascending_sub_sum_1800;
 mod max_average_subarray_1_643;
 mod max_consecutive_ones_485;
+mod max_count_pos_and_neg_int_2529;
 mod max_product_of_three_nums_628;
 mod max_score_after_splitting_str_1422;
 mod maximum_depth_binary_tree;
