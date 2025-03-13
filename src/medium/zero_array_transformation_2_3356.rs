@@ -48,6 +48,11 @@
 // queries[i].length == 3
 // 0 <= li <= ri < nums.length
 // 1 <= vali <= 5
+//
+// Solution has
+// Time complexity: O(n+m) (nums+queries)
+// Space complexity: O(n)
+//
 struct Solution;
 impl Solution {
     pub fn min_zero_array(nums: Vec<i32>, queries: Vec<Vec<i32>>) -> i32 {
