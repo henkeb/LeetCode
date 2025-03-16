@@ -77,6 +77,7 @@ mod min_operations_to_reduce_int_to_0_2571;
 mod min_ops_to_exceed_threshold_value_ii_3066;
 mod min_recolours_to_get_k_cons_b_blocks_2379;
 mod min_swaps_to_group_1s_2134;
+mod min_time_to_repair_cars_2594;
 mod min_xor_2429;
 mod minimum_jumps_to_reach_home_1654;
 mod minimum_ops_to_make_binary_array_elements_1_3191;
