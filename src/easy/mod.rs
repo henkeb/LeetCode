@@ -27,6 +27,7 @@ mod crawler_log_folder_1598;
 mod detect_capital_use_520;
 mod diameter_of_binary_tree_543;
 mod distribute_candies_575;
+mod divide_arr_into_pairs_2206;
 mod excel_column_sheet;
 mod fibonacci_number_509;
 mod find_complement_476;
