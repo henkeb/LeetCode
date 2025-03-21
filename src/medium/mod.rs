@@ -26,6 +26,7 @@ mod delete_nodes_and_return_forest_1110;
 mod delete_nodes_from_linked_list_present_in_array_3217;
 mod divide_players_into_teams_of_equal_skill_2491;
 mod filling_bookcase_shelves_1105;
+mod find_all_poss_recipes_from_given_supplies_2115;
 mod find_city_with_lowest_neighbours_1334;
 mod find_distinct_colours_among_balls_3160;
 mod find_elem_in_contaminated_tree_1261;
