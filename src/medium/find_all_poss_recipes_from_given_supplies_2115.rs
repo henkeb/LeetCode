@@ -49,42 +49,43 @@ impl Solution {
         ingredients: Vec<Vec<String>>,
         supplies: Vec<String>,
     ) -> Vec<String> {
-        let mut supplies: HashSet<String> = HashSet::from_iter(supplies);
-        let mut missing_ingredients: HashMap<String, Vec<String>> = HashMap::new();
+        let mut supplies: HashSet<&str> =
+            HashSet::from_iter(supplies.iter().map(|val| val.as_str()));
+        let mut missing_ingredients: HashMap<&str, Vec<&str>> = HashMap::new();
         let mut output = Vec::new();
         for i in 0..recipes.len() {
             let mut can_be_made = true;
             for ingredient in ingredients[i].iter() {
-                if !supplies.contains(ingredient) {
+                if !supplies.contains(ingredient.as_str()) {
                     can_be_made = false;
                     missing_ingredients
-                        .entry(recipes[i].clone())
-                        .and_modify(|ingredients| ingredients.push(ingredient.clone()))
-                        .or_insert(vec![ingredient.clone()]);
+                        .entry(recipes[i].as_str())
+                        .and_modify(|ingredients| ingredients.push(&ingredient))
+                        .or_insert(vec![&ingredient]);
                 }
             }
-            let mut can_now_be_made_queue: Vec<String> = Vec::new();
+            let mut can_now_be_made_queue: Vec<&str> = Vec::new();
             if can_be_made {
-                can_now_be_made_queue.push(recipes[i].clone());
-                supplies.insert(recipes[i].clone());
+                can_now_be_made_queue.push(recipes[i].as_str());
+                supplies.insert(recipes[i].as_str());
                 output.push(recipes[i].clone());
             }
             while let Some(ingredient) = can_now_be_made_queue.pop() {
-                let mut to_be_removed = Vec::new();
+                let mut to_be_removed: Vec<&str> = Vec::new();
                 for (k, v) in missing_ingredients.iter_mut() {
                     if let Some(idx) = v.iter().position(|x| *x == ingredient) {
                         v.remove(idx);
                     }
 
                     if v.is_empty() {
-                        to_be_removed.push(k.clone());
+                        to_be_removed.push(k);
                     }
                 }
                 for k in to_be_removed.iter() {
                     missing_ingredients.remove(k);
-                    output.push(k.clone());
-                    supplies.insert(k.clone());
-                    can_now_be_made_queue.push(k.clone());
+                    output.push(k.to_string());
+                    supplies.insert(k);
+                    can_now_be_made_queue.push(k);
                 }
             }
         }
