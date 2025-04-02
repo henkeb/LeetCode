@@ -68,6 +68,7 @@ mod max_consecutive_ones_485;
 mod max_count_pos_and_neg_int_2529;
 mod max_product_of_three_nums_628;
 mod max_score_after_splitting_str_1422;
+mod max_val_ordered_triplet_2873;
 mod maximum_depth_binary_tree;
 mod merge_2d_arr_by_sum_vals_2570;
 mod merge_two_binary_trees_617;
