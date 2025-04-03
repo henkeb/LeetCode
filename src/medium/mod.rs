@@ -66,6 +66,7 @@ mod max_candies_alloc_to_k_child_2226;
 mod max_num_fish_in_grid_2658;
 mod max_score_from_removing_substrings_1717;
 mod max_sum_pair_eq_digits_2342;
+mod max_val_ordered_triplet_2_2873;
 mod maximize_greatness_of_array_2592;
 mod maximum_distance_in_arrays_624;
 mod maximum_length_of_pair_chain_646;
