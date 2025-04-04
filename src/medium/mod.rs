@@ -55,6 +55,7 @@ mod largest_number_179;
 mod len_of_longest_fib_sequence_873;
 mod letter_tile_pos_1079;
 mod linked_list_in_binary_tree_1367;
+mod longest_consecutive_sequence_128;
 mod longest_increasing_subsequence_300;
 mod longest_nice_subarr_2401;
 mod longest_subarray_with_max_bitwise_and_2419;
