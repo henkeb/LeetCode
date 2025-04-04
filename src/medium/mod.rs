@@ -59,6 +59,7 @@ mod longest_increasing_subsequence_300;
 mod longest_nice_subarr_2401;
 mod longest_subarray_with_max_bitwise_and_2419;
 mod lowest_common_ancestor_236;
+mod lowest_common_ancestor_of_deepest_leaves;
 mod make_sum_divisible_by_p_1590;
 mod map_of_highest_peak_1765;
 mod max_abs_sum_of_any_sub_arr_1749;
