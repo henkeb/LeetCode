@@ -122,6 +122,7 @@ mod special_array_3151;
 mod sqrt;
 mod student_addendance_record_i_551;
 mod sum_digits_after_string_convert_1945;
+mod sum_of_all_xor_subsets_1863;
 mod sum_of_left_leaves_404;
 mod summary_ranges_228;
 mod symmetric_tree;

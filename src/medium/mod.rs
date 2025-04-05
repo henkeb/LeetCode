@@ -49,6 +49,7 @@ mod house_robber_2_213;
 mod house_robbers_4_2560;
 mod insert_greatest_common_divisor_between_nodes_2807;
 mod josephus_problem_1823;
+mod jump_game_55;
 mod kdiff_pairs_in_array_532;
 mod kth_lexo_str_of_all_happy_str_1415;
 mod largest_number_179;
