@@ -97,6 +97,7 @@ mod num_subarr_with_odd_sum_1524;
 mod num_substr_cont_all_3_char_1358;
 mod number_of_good_leaf_nodes_pairs_1530;
 mod partition_arr_acc_to_giv_pivot_2161;
+mod partition_equal_subset_sum_416;
 mod permutation_in_string_567;
 mod prod_of_last_k_nums_1352;
 mod range_sum_of_sorted_subarray_sums_1508;

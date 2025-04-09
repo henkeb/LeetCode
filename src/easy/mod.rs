@@ -78,6 +78,7 @@ mod min_length_after_removing_substrings_2696;
 mod minimum_absolut_diff_530;
 mod minimum_depth_binary_tree;
 mod minimum_index_sum_of_two_lists_599;
+mod minops_to_make_arr_val_eq_to_k_3375;
 mod missing_number_268;
 mod move_zeroes_283;
 mod next_greater_element1_496;
