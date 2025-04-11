@@ -22,6 +22,7 @@ mod convert_a_number_to_hexadecimal_405;
 mod convert_sorted_array_to_binary_tree;
 mod count_number_of_consistent_strings_1684;
 mod count_segments_434;
+mod count_symmetric_ints_2843;
 mod counting_bits_338;
 mod crawler_log_folder_1598;
 mod detect_capital_use_520;
