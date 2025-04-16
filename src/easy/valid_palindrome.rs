@@ -8,7 +8,7 @@
 //
 struct Solution;
 impl Solution {
-    pub fn is_palindrome(s: String) -> bool {
+    pub fn is_palindrome_old(s: String) -> bool {
         s.char_indices()
             .filter(|(_, c)| c.is_ascii_alphanumeric())
             .zip(
@@ -20,6 +20,13 @@ impl Solution {
             .all(|((_, first_char), (_, last_char))| {
                 first_char.to_ascii_lowercase() == last_char.to_ascii_lowercase()
             })
+    }
+
+    pub fn is_palindrome(s: String) -> bool {
+        s.chars()
+            .filter(|c| c.is_ascii_alphanumeric())
+            .zip(s.chars().rev().filter(|c| c.is_ascii_alphanumeric()))
+            .all(|(a, b)| a.to_ascii_lowercase() == b.to_ascii_lowercase())
     }
 }
 
