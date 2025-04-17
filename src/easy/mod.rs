@@ -20,6 +20,7 @@ mod contains_duplicate_ii;
 mod convert_1d_to_2d_array_2022;
 mod convert_a_number_to_hexadecimal_405;
 mod convert_sorted_array_to_binary_tree;
+mod count_eq_and_div_pairs_in_arr_2176;
 mod count_good_triplets_1534;
 mod count_number_of_consistent_strings_1684;
 mod count_segments_434;
