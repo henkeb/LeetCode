@@ -40,6 +40,7 @@ mod find_dissappeared_numbers_448;
 mod find_index_of_first_occ;
 mod find_mode_in_bst_501;
 mod find_the_difference_389;
+mod finding_3digit_even_nums_2094;
 mod first_bad_version_278;
 mod first_unique_character_387;
 mod fizz_buzz_412;

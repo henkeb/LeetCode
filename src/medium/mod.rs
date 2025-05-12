@@ -35,6 +35,7 @@ mod find_eventual_safe_states_802;
 mod find_longest_substr_containing_even_vowels_1371;
 mod find_matrix_given_row_col_sums_1605;
 mod find_min_max_nodes_between_critical_points_2058;
+mod find_min_time_to_reach_last_room_3341;
 mod find_missing_and_repeated_values_2965;
 mod find_missing_observations_2028;
 mod find_original_arr_from_doub_arr_2007;
