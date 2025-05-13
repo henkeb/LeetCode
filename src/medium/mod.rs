@@ -112,6 +112,7 @@ mod solving_questions_with_brainpower_2140;
 mod sort_an_array_912;
 mod sort_the_jumbled_numbers_2191;
 mod step_by_step_directions_2096;
+mod total_ch_in_str_after_transformation_1_3335;
 mod tuple_with_same_product_1726;
 mod unique_binary_search_trees_96;
 mod walking_robot_simulation_874;
