@@ -66,6 +66,7 @@ mod long_strictly_inc_or_dec_subarray_3105;
 mod longest_common_prefix;
 mod longest_harmonious_subsequence_594;
 mod longest_palindrome_409;
+mod longest_unequal_adj_groups_subseq_1_2900;
 mod lucky_number_in_a_matrix_1380;
 mod make_two_arrays_equal_by_rev_substr_1460;
 mod max_ascending_sub_sum_1800;
