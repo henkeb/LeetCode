@@ -108,6 +108,7 @@ mod redundant_connection_684;
 mod regions_cut_by_slashes_959;
 mod remove_all_occ_of_substr_1910;
 mod reverse_substrings_between_paranthesis_1190;
+mod set_matrix_zeroes_73;
 mod solving_questions_with_brainpower_2140;
 mod sort_an_array_912;
 mod sort_the_jumbled_numbers_2191;
