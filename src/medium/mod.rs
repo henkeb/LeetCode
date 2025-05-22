@@ -95,6 +95,7 @@ mod minimum_ops_to_make_binary_array_elements_1_3191;
 mod minimum_time_diff_539;
 mod most_profitable_path_in_tree_2467;
 mod neighbouring_bitwise_xor_2683;
+mod num_islands_200;
 mod num_subarr_with_odd_sum_1524;
 mod num_substr_cont_all_3_char_1358;
 mod number_of_good_leaf_nodes_pairs_1530;
