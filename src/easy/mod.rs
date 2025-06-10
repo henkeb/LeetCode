@@ -73,6 +73,7 @@ mod max_ascending_sub_sum_1800;
 mod max_average_subarray_1_643;
 mod max_consecutive_ones_485;
 mod max_count_pos_and_neg_int_2529;
+mod max_diff_even_odd_freq_1_3442;
 mod max_product_of_three_nums_628;
 mod max_score_after_splitting_str_1422;
 mod max_val_ordered_triplet_2873;
